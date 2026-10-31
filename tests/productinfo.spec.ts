@@ -34,7 +34,7 @@ test ("Verify the product information Test",async({homePage,searchpage,productin
   expect.soft(completeinfo.get("Product Code")).toBe("Product 18");
   expect.soft(completeinfo.get("Reward Points")).toBe("800");
   expect.soft(completeinfo.get("Availability")).toBe("In Stock");
-  expect.soft(completeinfo.get("Product price")).toBe("$2,200.00");
+  expect.soft(completeinfo.get("Product price")).toBe("$2,000.00");
   
 
 })
