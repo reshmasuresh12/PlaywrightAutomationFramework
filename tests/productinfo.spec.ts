@@ -25,7 +25,7 @@ test ("Verify the product image count",async({homePage,searchpage,productinfo})=
 test ("Verify the product information Test",async({homePage,searchpage,productinfo})=>
 {
   await homePage.dosearch("Macbook");
-  await searchpage.SelectANDClickOnProduct("MacBook Pro");
+  await searchpage.SelectANDClickOnProduct("MacBook Air");
   let completeinfo= await productinfo.getProductCompleteInfo();
 
   console.log(completeinfo);
