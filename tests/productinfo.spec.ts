@@ -25,16 +25,16 @@ test ("Verify the product image count",async({homePage,searchpage,productinfo})=
 test ("Verify the product information Test",async({homePage,searchpage,productinfo})=>
 {
   await homePage.dosearch("Macbook");
-  await searchpage.SelectANDClickOnProduct("MacBook Air");
+  await searchpage.SelectANDClickOnProduct("MacBook Pro");
   let completeinfo= await productinfo.getProductCompleteInfo();
 
   console.log(completeinfo);
 
   expect.soft(completeinfo.get("Brand")).toBe("Apple");
-  expect.soft(completeinfo.get("Product Code")).toBe("Product 17");
-  expect.soft(completeinfo.get("Reward Points")).toBe("700");
+  expect.soft(completeinfo.get("Product Code")).toBe("Product 18");
+  expect.soft(completeinfo.get("Reward Points")).toBe("800");
   expect.soft(completeinfo.get("Availability")).toBe("In Stock");
-  expect.soft(completeinfo.get("Product price")).toBe("$1,202.00");
+  expect.soft(completeinfo.get("Product price")).toBe("$2,200.00");
   
 
 })
