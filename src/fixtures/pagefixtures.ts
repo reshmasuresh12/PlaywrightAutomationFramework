@@ -5,7 +5,7 @@
 //import {ProductInfoPage} from "src/pages/Productinfopage.js"
 
 import { test as baseTest } from '@playwright/test';
-import { LoginPage } from "../pages/LoginPage.js";
+import { LoginPage } from "../pages/loginpage.js";
 import { homepage } from "../pages/homepage.js";
 import { SearchResultsPage } from "../pages/SearchResultsPage.js";
 import { ProductInfoPage } from "../pages/Productinfopage.js";
