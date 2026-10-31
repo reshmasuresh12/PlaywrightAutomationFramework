@@ -1,0 +1,147 @@
+{
+  statusCode: 200,
+  responseBody: [
+    {
+      id: 8694200,
+      name: 'Reshmaaa',
+      email: 'reshma1793457950053@gmail.com',
+      gender: 'female',
+      status: 'active'
+    },
+    {
+      id: 8694197,
+      name: 'Reshmaaa',
+      email: 'reshma1793457640980@gmail.com',
+      gender: 'female',
+      status: 'active'
+    },
+    {
+      id: 8694194,
+      name: 'Reshmaaa',
+      email: 'reshma1793457393510@gmail.com',
+      gender: 'female',
+      status: 'active'
+    },
+    {
+      id: 8694192,
+      name: 'Reshmaaa',
+      email: 'reshma1793457133129@gmail.com',
+      gender: 'female',
+      status: 'active'
+    },
+    {
+      id: 8694188,
+      name: 'Reshmaaa',
+      email: 'reshma1793456932175@gmail.com',
+      gender: 'female',
+      status: 'active'
+    },
+    {
+      id: 8694178,
+      name: 'Reshmaaa',
+      email: 'reshma1793454943821@gmail.com',
+      gender: 'female',
+      status: 'active'
+    },
+    {
+      id: 8694146,
+      name: 'Reshmaaa',
+      email: 'reshma1793452521924@gmail.com',
+      gender: 'female',
+      status: 'active'
+    },
+    {
+      id: 8694126,
+      name: 'Reshmaaa',
+      email: 'reshma1793450402502@gmail.com',
+      gender: 'female',
+      status: 'active'
+    },
+    {
+      id: 8690748,
+      name: 'Ranjit Dwivedi',
+      email: 'ranjit_dwivedi@koch.test',
+      gender: 'male',
+      status: 'inactive'
+    },
+    {
+      id: 8690747,
+      name: 'Deeptendu Gupta',
+      email: 'deeptendu_gupta@krajcik.example',
+      gender: 'female',
+      status: 'inactive'
+    }
+  ]
+}
+[
+  {
+    id: 8694200,
+    name: 'Reshmaaa',
+    email: 'reshma1793457950053@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694197,
+    name: 'Reshmaaa',
+    email: 'reshma1793457640980@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694194,
+    name: 'Reshmaaa',
+    email: 'reshma1793457393510@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694192,
+    name: 'Reshmaaa',
+    email: 'reshma1793457133129@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694188,
+    name: 'Reshmaaa',
+    email: 'reshma1793456932175@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694178,
+    name: 'Reshmaaa',
+    email: 'reshma1793454943821@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694146,
+    name: 'Reshmaaa',
+    email: 'reshma1793452521924@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694126,
+    name: 'Reshmaaa',
+    email: 'reshma1793450402502@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8690748,
+    name: 'Ranjit Dwivedi',
+    email: 'ranjit_dwivedi@koch.test',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8690747,
+    name: 'Deeptendu Gupta',
+    email: 'deeptendu_gupta@krajcik.example',
+    gender: 'female',
+    status: 'inactive'
+  }
+]
