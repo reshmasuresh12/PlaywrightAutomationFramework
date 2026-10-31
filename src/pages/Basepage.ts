@@ -1,6 +1,6 @@
 import {Locator, Page} from '@playwright/test';
 
-export class Basepage
+export class BasePage
 {
     protected readonly page:Page; // we are making it protected so that the child classes can access it. If we make it private then the child classes will not be able to access it.
    

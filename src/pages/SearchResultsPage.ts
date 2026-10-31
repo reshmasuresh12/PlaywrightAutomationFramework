@@ -1,7 +1,7 @@
 import {Locator, Page} from '@playwright/test';
-import { Basepage } from './basepage.js';
+import { BasePage } from './Basepage.js';
 
-export class SearchResultsPage extends Basepage
+export class SearchResultsPage extends BasePage
 {
   private readonly resultHeader:Locator
   private readonly searchResults:Locator

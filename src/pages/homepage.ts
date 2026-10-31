@@ -1,7 +1,7 @@
 import {Locator, Page} from '@playwright/test';
-import { Basepage } from './basepage.js';
+import { BasePage } from './Basepage.js';
 
-export class homepage extends Basepage
+export class homepage extends BasePage
 {
     private readonly headers:Locator
     private readonly logoutlink:Locator

@@ -1,8 +1,8 @@
-import {Locator, Page} from '@playwright/test';
-import { Basepage } from './basepage.js';
-import { promises } from 'node:dns';
+import { Locator, Page } from '@playwright/test';
+import { BasePage } from "./Basepage.js";
 
-export class LoginPage extends Basepage
+export class LoginPage extends BasePage
+
 {
     private readonly emailid:Locator
     private readonly password:Locator
