@@ -25,7 +25,7 @@ test("Fetch multiple user", async({request})=>
    console.log("Response code is : "+response.status());
    console.log("Response mesaage is :"+response.statusText());
 
-   expect(response.status).toBe(200);
+   expect(response.status()).toBe(200);
 })
 
 
