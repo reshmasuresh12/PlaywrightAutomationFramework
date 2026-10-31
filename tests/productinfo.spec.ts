@@ -39,7 +39,7 @@ test ("Verify the product information Test",async({homePage,searchpage,productin
 
 })
 
-test ("Verify the common logo test",async({productinfo})=>
+test ("Verify the common logo test @sanity",async({productinfo})=>
 {
   let isvisilble=await productinfo.isLogoVisible();
   

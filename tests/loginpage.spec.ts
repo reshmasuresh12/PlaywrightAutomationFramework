@@ -12,7 +12,7 @@ test.beforeEach(async({loginpage})=>
 })
 
 //create object for the child login class
-test ("login title test",async({loginpage})=>
+test ("login title test @sanity",async({loginpage})=>
 {
   let title= await loginpage.getloginpagetitle();
   expect(title).toBe("Account Login");
@@ -27,7 +27,7 @@ test ("forgot pwd link exist test",async({loginpage})=>
 
 })
 
-test ("do login test",async({loginpage,homePage})=>
+test ("do login test @sanity",async({loginpage,homePage})=>
 {
  await loginpage.dologin(process.env.USER_NAME!,process.env.PASSWORD!);
  //assertions

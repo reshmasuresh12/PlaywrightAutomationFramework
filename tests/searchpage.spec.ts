@@ -11,7 +11,7 @@ test.beforeEach(async({loginpage})=>
 
 })
 
-test ("Verify search Header Functionality Test",async({homePage,searchpage})=>
+test ("Verify search Header Functionality Test @sanity",async({homePage,searchpage})=>
 {
   await homePage.dosearch("macbook");
   let searchheader:string=await searchpage.getSearchResultspageHeader();

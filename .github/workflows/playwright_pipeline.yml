@@ -245,7 +245,7 @@ jobs:
       - name: Checkout QA Automation Repository
         uses: actions/checkout@v4
         with:
-          repository: testautomation093/PlaywrightAutomationFWAugust2026WeekDays
+          repository: reshmasuresh12/PlaywrightAutomationFramework
 
       # ---------------------------------------------------------
       # Setup Node.js
@@ -423,7 +423,7 @@ jobs:
       - name: Checkout QA Automation Repository
         uses: actions/checkout@v4
         with:
-          repository: testautomation093/PlaywrightAutomationFWAugust2026WeekDays
+          repository: reshmasuresh12/PlaywrightAutomationFramework
 
       # ---------------------------------------------------------
       # Setup Node.js
