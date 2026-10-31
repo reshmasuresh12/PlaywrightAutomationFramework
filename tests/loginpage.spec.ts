@@ -1,8 +1,8 @@
-import { LoginPage } from "src/pages/LoginPage.js";
-import {test,expect} from "../src/fixtures/pagefixtures.js";
-import {CsvHelper} from  "../src/utils/csvUtils.js" 
-import {ExcelHelper}from "../src/utils/excelUtils.js"
-import {JsonHelper}from "../src/utils/jsonUtils.js"
+import { LoginPage } from "../src/pages/loginpage.js";
+import { test, expect } from "../src/fixtures/pagefixtures.js";
+import { CsvHelper } from "../src/utils/csvUtils.js";
+import { ExcelHelper } from "../src/utils/excelUtils.js";
+import { JsonHelper } from "../src/utils/jsonUtils.js";
 
 test.beforeEach(async({loginpage})=>
 {
@@ -52,7 +52,7 @@ test(`Negative test: ${data.username} and ${data.password}`,async({loginpage})=>
 }
 //with excel
 
-let testData2:Record<string, string>[]=ExcelHelper.readExcel("src/testData/loginData.xlsx");
+let testData2:Record<string, string>[]=ExcelHelper.readExcel("src/testData/LoginData.xlsx");
 
 for (let data of testData2)
 {
