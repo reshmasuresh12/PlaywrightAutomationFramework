@@ -147,7 +147,7 @@ jobs:
       - name: Checkout QA Automation Repository
         uses: actions/checkout@v4
         with:
-          repository: testautomation093/PlaywrightAutomationFWAugust2026WeekDays
+          repository:  reshma141/playwrightimageee
       - name: Pull Docker Image
         run: |
           
@@ -156,7 +156,7 @@ jobs:
           echo "Pulling Docker Image From Docker Hub"
           echo "=============================================="
 
-          docker pull testautomation093/pwaugustweekdayslatestfw2026:latest
+          docker pull  reshma141/playwrightimageee:latest
       - name: Verify Docker Image
         run: |
           
@@ -177,7 +177,7 @@ jobs:
             -e ENV=qa \
             -v ${{ github.workspace }}/reports:/app/reports \
             -v ${{ github.workspace }}/allure-results:/app/allure-results \
-            testautomation093/pwaugustweekdayslatestfw2026:latest
+             reshma141/playwrightimageee:latest
       - name: Generate Allure Report
         if: always()
         run: |
@@ -244,7 +244,7 @@ jobs:
           echo "Pulling Docker Image From Docker Hub"
           echo "=============================================="
 
-          docker pull testautomation093/pwaugustweekdayslatestfw2026:latest
+          docker pull  reshma141/playwrightimageee:latest
       - name: Verify Docker Image
         run: docker images
       - name: Execute STAGE Sanity Suite
@@ -263,7 +263,7 @@ jobs:
             -e ENV=stage \
             -v ${{ github.workspace }}/reports:/app/reports \
             -v ${{ github.workspace }}/allure-results:/app/allure-results \
-            testautomation093/pwaugustweekdayslatestfw2026:latest
+             reshma141/playwrightimageee:latest
       - name: Generate Allure Report
         if: always()
         run: |
@@ -449,7 +449,7 @@ jobs:
 
           <tr>
             <td>Docker Image</td>
-            <td>testautomation093/pwaugustweekdayslatestfw2026:latest</td>
+            <td>reshma141/playwrightimageee:latest</td>
           </tr>
 
           </table>
@@ -555,7 +555,7 @@ jobs:
 
           echo ""
 
-          echo "Docker Image Used : testautomation093/pwaugustweekdayslatestfw2026:latest"
+          echo "Docker Image Used :  reshma141/playwrightimageee:latest"
 
 
 
