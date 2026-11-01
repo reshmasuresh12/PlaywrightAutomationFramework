@@ -1,0 +1,9 @@
+searching from the product : Macbook
+clicking on the product with name: MacBook Pro
+Map(5) {
+  'Brand' => 'Apple',
+  'Product Code' => 'Product 18',
+  'Reward Points' => '800',
+  'Availability' => 'In Stock',
+  'Product price' => '$2,000.00'
+}

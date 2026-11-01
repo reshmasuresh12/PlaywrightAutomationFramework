@@ -1,0 +1,2 @@
+searching from the product : Macbook
+clicking on the product with name: MacBook Air

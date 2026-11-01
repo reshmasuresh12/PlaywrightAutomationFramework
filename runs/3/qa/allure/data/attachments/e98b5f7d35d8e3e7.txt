@@ -1,0 +1,18 @@
+{
+  statusCode: 201,
+  responseBody: {
+    id: 8694746,
+    name: 'Reshma Suresh',
+    email: 'reshma1793539824191@gmail.com',
+    gender: 'female',
+    status: 'inactive'
+  }
+}
+{
+  id: 8694746,
+  name: 'Reshma Suresh',
+  email: 'reshma1793539824191@gmail.com',
+  gender: 'female',
+  status: 'inactive'
+}
+Userid is : 8694746

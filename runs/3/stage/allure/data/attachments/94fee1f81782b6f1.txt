@@ -1,0 +1,29 @@
+APIResponse: 404 Not Found
+  Date: Sun, 01 Nov 2026 13:32:32 GMT
+  Content-Type: application/json; charset=utf-8
+  Content-Length: 32
+  Connection: keep-alive
+  Cache-Control: no-cache
+  content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-hRrtDEKxjUGYTQwI4Ug3Sw=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+  deprecation: @1793491200
+  feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+  link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+  referrer-policy: strict-origin-when-cross-origin
+  strict-transport-security: max-age=63072000; includeSubDomains
+  vary: Origin
+  x-content-type-options: nosniff
+  x-frame-options: SAMEORIGIN
+  x-permitted-cross-domain-policies: none
+  x-ratelimit-limit: 300
+  x-ratelimit-remaining: 299
+  x-ratelimit-reset: 0
+  x-xss-protection: 0
+  Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  cf-cache-status: DYNAMIC
+  Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=EYeo%2Bm1qs6Ta63DuO3%2Bk9hLHrNUvL4q6NT4I1twpLaP2c9eXUhqRhE5KWzdvHvFS%2Fo6VUl30YJ1wNTPpSRzosnZYIr7PxdOaVamXLNe662gCHFbKYiNq7z%2BUduGuo7s%3D"}]}
+  Server: cloudflare
+  CF-RAY: a53b441b5d2c2f45-LAX
+  alt-svc: h3=":443"; ma=86400
+{ message: 'Resource not found' }
+Response code is : 404
+Response mesaage is :Not Found

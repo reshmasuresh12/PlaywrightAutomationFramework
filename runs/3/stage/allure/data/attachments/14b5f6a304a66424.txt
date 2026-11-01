@@ -1,0 +1,37 @@
+APIResponse: 201 Created
+  Date: Sun, 01 Nov 2026 13:32:34 GMT
+  Content-Type: application/json; charset=utf-8
+  Content-Length: 108
+  Connection: keep-alive
+  Cache-Control: max-age=0, private, must-revalidate
+  content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-Eyxt7gDGnlPsa0X6H+mtQA=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+  deprecation: @1793491200
+  etag: W/"190c025e83ab6cb72da428e6f854b20a"
+  feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+  link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+  location: https://gorest.co.in/public/v2/users/8694750
+  referrer-policy: strict-origin-when-cross-origin
+  strict-transport-security: max-age=63072000; includeSubDomains
+  vary: Origin
+  x-content-type-options: nosniff
+  x-frame-options: SAMEORIGIN
+  x-permitted-cross-domain-policies: none
+  x-ratelimit-limit: 300
+  x-ratelimit-remaining: 299
+  x-ratelimit-reset: 0
+  x-xss-protection: 0
+  Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  cf-cache-status: DYNAMIC
+  Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=eR2b3ztwRr%2BRKQSNo2FJCAddJrjltBhwlyX53LJbyHIBSKgAu9fPqJwPA84vTbgU5jOk5Ri9oaWkrx%2Fb4Z4O0uqVXYOs6Zjqb80RM9szNMG15vtHxgG9vCcqiUmmJdc%3D"}]}
+  Server: cloudflare
+  CF-RAY: a53b4425ed980916-LAX
+  alt-svc: h3=":443"; ma=86400
+{
+  id: 8694750,
+  name: 'Reshmaaa',
+  email: 'reshma1793539953522@gmail.com',
+  gender: 'female',
+  status: 'active'
+}
+Response code is : 201
+Response mesaage is :Created

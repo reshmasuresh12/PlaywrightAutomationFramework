@@ -1,0 +1,147 @@
+{
+  statusCode: 200,
+  responseBody: [
+    {
+      id: 8694726,
+      name: 'Reshmaaa',
+      email: 'reshma1793537228730@gmail.com',
+      gender: 'female',
+      status: 'active'
+    },
+    {
+      id: 8694688,
+      name: 'Reshmaaa',
+      email: 'reshma1793535512852@gmail.com',
+      gender: 'female',
+      status: 'active'
+    },
+    {
+      id: 8694678,
+      name: 'Reshmaaa',
+      email: 'reshma1793534056210@gmail.com',
+      gender: 'female',
+      status: 'active'
+    },
+    {
+      id: 8694203,
+      name: 'Reshmaaa',
+      email: 'reshma1793458078292@gmail.com',
+      gender: 'female',
+      status: 'active'
+    },
+    {
+      id: 8694200,
+      name: 'Reshmaaa',
+      email: 'reshma1793457950053@gmail.com',
+      gender: 'female',
+      status: 'active'
+    },
+    {
+      id: 8694197,
+      name: 'Reshmaaa',
+      email: 'reshma1793457640980@gmail.com',
+      gender: 'female',
+      status: 'active'
+    },
+    {
+      id: 8694194,
+      name: 'Reshmaaa',
+      email: 'reshma1793457393510@gmail.com',
+      gender: 'female',
+      status: 'active'
+    },
+    {
+      id: 8694192,
+      name: 'Reshmaaa',
+      email: 'reshma1793457133129@gmail.com',
+      gender: 'female',
+      status: 'active'
+    },
+    {
+      id: 8694188,
+      name: 'Reshmaaa',
+      email: 'reshma1793456932175@gmail.com',
+      gender: 'female',
+      status: 'active'
+    },
+    {
+      id: 8694178,
+      name: 'Reshmaaa',
+      email: 'reshma1793454943821@gmail.com',
+      gender: 'female',
+      status: 'active'
+    }
+  ]
+}
+[
+  {
+    id: 8694726,
+    name: 'Reshmaaa',
+    email: 'reshma1793537228730@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694688,
+    name: 'Reshmaaa',
+    email: 'reshma1793535512852@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694678,
+    name: 'Reshmaaa',
+    email: 'reshma1793534056210@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694203,
+    name: 'Reshmaaa',
+    email: 'reshma1793458078292@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694200,
+    name: 'Reshmaaa',
+    email: 'reshma1793457950053@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694197,
+    name: 'Reshmaaa',
+    email: 'reshma1793457640980@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694194,
+    name: 'Reshmaaa',
+    email: 'reshma1793457393510@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694192,
+    name: 'Reshmaaa',
+    email: 'reshma1793457133129@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694188,
+    name: 'Reshmaaa',
+    email: 'reshma1793456932175@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694178,
+    name: 'Reshmaaa',
+    email: 'reshma1793454943821@gmail.com',
+    gender: 'female',
+    status: 'active'
+  }
+]

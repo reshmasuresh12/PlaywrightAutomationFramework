@@ -1,0 +1,17 @@
+{
+  statusCode: 200,
+  responseBody: {
+    id: 8694746,
+    name: 'Reshma KS',
+    email: 'reshma1793539825068@gmail.com',
+    gender: 'female',
+    status: 'active'
+  }
+}
+{
+  id: 8694746,
+  name: 'Reshma KS',
+  email: 'reshma1793539825068@gmail.com',
+  gender: 'female',
+  status: 'active'
+}
