@@ -1,0 +1,109 @@
+APIResponse: 200 OK
+  Date: Sun, 01 Nov 2026 13:40:31 GMT
+  Content-Type: application/json; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Cache-Control: max-age=0, private, must-revalidate
+  content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-Z9ZMD4lQ2q0C/lAJ2+4CiQ=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+  deprecation: @1793491200
+  etag: W/"11091dd37696290ac578e3ec32487093"
+  feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+  link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+  referrer-policy: strict-origin-when-cross-origin
+  strict-transport-security: max-age=63072000; includeSubDomains
+  vary: Origin
+  x-content-type-options: nosniff
+  x-frame-options: SAMEORIGIN
+  x-links-current: https://gorest.co.in/public/v2/users?page=1
+  x-links-next: https://gorest.co.in/public/v2/users?page=2
+  x-links-previous: 
+  x-pagination-limit: 10
+  x-pagination-page: 1
+  x-pagination-pages: 295
+  x-pagination-total: 2946
+  x-permitted-cross-domain-policies: none
+  x-ratelimit-limit: 300
+  x-ratelimit-remaining: 299
+  x-ratelimit-reset: 0
+  x-xss-protection: 0
+  Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  cf-cache-status: DYNAMIC
+  Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Q14i5CfafaARtlXQlQERf09AeAyYNDAYvRApXIPMVxf4ITthUKY6uV1FJ%2BxXBNs03nGRiQHbQMeUw00D8tsJbYPiVK9F7M43WXPBtDBQ7EIq0R6vnT3zNrfJ5B02rxY%3D"}]}
+  Content-Encoding: br
+  Server: cloudflare
+  CF-RAY: a53b4fca8e0373eb-IAD
+  alt-svc: h3=":443"; ma=86400
+[
+  {
+    id: 8694750,
+    name: 'Reshmaaa',
+    email: 'reshma1793539953522@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694748,
+    name: 'Reshmaaa',
+    email: 'reshma1793539862880@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694726,
+    name: 'Reshmaaa',
+    email: 'reshma1793537228730@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694688,
+    name: 'Reshmaaa',
+    email: 'reshma1793535512852@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694678,
+    name: 'Reshmaaa',
+    email: 'reshma1793534056210@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694203,
+    name: 'Reshmaaa',
+    email: 'reshma1793458078292@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694200,
+    name: 'Reshmaaa',
+    email: 'reshma1793457950053@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694197,
+    name: 'Reshmaaa',
+    email: 'reshma1793457640980@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694194,
+    name: 'Reshmaaa',
+    email: 'reshma1793457393510@gmail.com',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8694192,
+    name: 'Reshmaaa',
+    email: 'reshma1793457133129@gmail.com',
+    gender: 'female',
+    status: 'active'
+  }
+]
+Response code is : 200
+Response mesaage is :OK
