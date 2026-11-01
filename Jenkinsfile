@@ -1,6 +1,6 @@
 /**********************************************************************************************
  *
- *                 ENTERPRISE PLAYWRIGHT + DEV APPLICATION CI/CD PIPELINE
+ *                 ENTERPRISE PLAYWRIGHT + DEV APPLICATION CI/CD PIPELINE with Docker
  *
  *  Author  : Nishant Goel
  *  Purpose : Enterprise CI/CD Demonstration
@@ -60,7 +60,7 @@ pipeline {
 
         NODEJS_HOME = tool 'NodeJs'
         
-        JAVA_HOME  = tool 'Jdk21'
+        JAVA_HOME  = tool 'jdk21'
 
     }
 
@@ -207,138 +207,65 @@ pipeline {
 
         }
 
-        //==============================================================================
+//======================================================
 // STEP 4
-// QA REGRESSION TESTS
-//==============================================================================
+// QA REGRESSION TESTS USING DOCKER
+//======================================================
 
-stage('STEP 4 : Execute QA Regression Tests') {
+stage('STEP 4 - QA Regression Tests') {
 
     steps {
 
-        echo ""
-        echo "==============================================================="
-        echo "EXECUTING PLAYWRIGHT REGRESSION TESTS"
-        echo "==============================================================="
+        script {
 
-        dir('PlaywrightAutomation') {
+            echo "=============================================="
+            echo "Pulling Docker Image from Docker Hub"
+            echo "=============================================="
 
-            git branch: 'master',
-                url: "${PLAYWRIGHT_REPOSITORY}"
+            bat '''
+                docker pull reshma141/playwrightimageee:latest
+            '''
 
-            bat """
+            echo "=============================================="
+            echo "Executing QA Regression Suite Inside Docker"
+            echo "=============================================="
 
-    echo =====================================================
-    echo Node Version
-    echo =====================================================
-    call node -v
+            bat '''
 
-    echo.
-    echo =====================================================
-    echo Installing NPM Dependencies
-    echo =====================================================
-    call npm ci
+                if not exist reports mkdir reports
+                if not exist allure-results mkdir allure-results
 
-    echo.
-    echo =====================================================
-    echo Installing Playwright Browsers
-    echo =====================================================
-    call npx playwright install chromium
+                docker run --rm ^
+                -e CI=true ^
+                -e ENV=qa ^
+                -v "%WORKSPACE%\\reports:/app/reports" ^
+                -v "%WORKSPACE%\\allure-results:/app/allure-results" ^
+                reshma141/playwrightimageee:latest
 
-    echo.
-    echo =====================================================
-    echo Running QA Regression Suite
-    echo =====================================================
-
-    set ENV=qa
-
-    call npx playwright test --project=chromium
-
-    echo.
-    echo =====================================================
-    echo VERIFYING REPORTS
-    echo =====================================================
-
-    echo Current Folder
-    cd
-
-    echo.
-
-    echo Playwright HTML Report
-    dir reports
-
-    echo.
-
-    dir reports\\html-report
-
-    echo.
-
-    echo Allure Results
-    dir allure-results
-
-    echo.
-    echo =====================================================
-    echo Generating QA Allure Report
-    echo =====================================================
-
-    if exist allure-report rmdir /S /Q allure-report
-
-    call npx allure generate allure-results --clean -o allure-report
-
-    echo.
-    echo =====================================================
-    echo STEP 4 COMPLETED SUCCESSFULLY
-    echo =====================================================
-
-"""
-
+            '''
         }
-
     }
 
     post {
 
-    always {
+        always {
 
-        archiveArtifacts(
-            artifacts: '''
-                PlaywrightAutomation/reports/html-report/**,
-                PlaywrightAutomation/allure-report/**,
-                PlaywrightAutomation/allure-results/**
-            ''',
-            fingerprint: true,
-            allowEmptyArchive: true
-        )
+            script {
 
-        publishHTML(target: [
+                bat '''
 
-            allowMissing: true,
-            alwaysLinkToLastBuild: true,
-            keepAll: true,
+                    if exist allure-results (
+                        call allure generate allure-results --clean -o allure-report
+                    )
 
-            reportDir: 'PlaywrightAutomation/reports/html-report',
-            reportFiles: 'index.html',
-            reportName: 'QA Playwright HTML Report'
+                '''
 
-        ])
-
-        allure(
-
-            includeProperties: false,
-
-            jdk: 'jdk17',
-
-            results: [[
-                path: 'PlaywrightAutomation/allure-results'
-            ]]
-
-        )
-
+                archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true
+                archiveArtifacts artifacts: 'allure-report/**', allowEmptyArchive: true
+            }
+        }
     }
-
-
-    }
-    }
+}
 	    //==============================================================================
         // STEP 5
         // DEPLOY TO STAGE
@@ -372,55 +299,65 @@ stage('STEP 4 : Execute QA Regression Tests') {
 
         }
 
-        //==============================================================================
-        // STEP 6
-        // STAGE SANITY TESTS
-        //==============================================================================
+        //======================================================
+// STEP 6
+// STAGE SANITY TESTS USING DOCKER
+//======================================================
 
-        stage('STEP 6 : Execute STAGE Sanity Tests') {
+stage('STEP 6 - STAGE Sanity Tests') {
 
     steps {
 
-        echo ""
-        echo "==============================================================="
-        echo "EXECUTING PLAYWRIGHT SANITY TESTS"
-        echo "==============================================================="
+        script {
 
-        dir('PlaywrightAutomation') {
+            echo "=============================================="
+            echo "Pulling Docker Image from Docker Hub"
+            echo "=============================================="
 
-            bat """
+            bat '''
+                docker pull reshma141/playwrightimageee:latest
+            '''
 
-                echo =====================================================
-                echo Installing NPM Dependencies
-                echo =====================================================
-                call npm ci
+            echo "=============================================="
+            echo "Executing STAGE Sanity Suite Inside Docker"
+            echo "=============================================="
 
-                echo.
-                echo =====================================================
-                echo Installing Playwright Browsers
-                echo =====================================================
-                call npx playwright install chromium
+            bat '''
 
-                echo.
-                echo =====================================================
-                echo Running STAGE Sanity Suite
-                echo =====================================================
+                if not exist reports mkdir reports
+                if not exist allure-results mkdir allure-results
 
-                set ENV=stage
+                docker run --rm ^
+                -e CI=true ^
+                -e ENV=stage ^
+                -v "%WORKSPACE%\\reports:/app/reports" ^
+                -v "%WORKSPACE%\\allure-results:/app/allure-results" ^
+                reshma141/playwrightimageee:latest ^
+                npx playwright test --project=chromium --grep @sanity
 
-                call npx playwright test --grep @sanity --project=chromium
-
-                echo.
-                echo =====================================================
-                echo STAGE SANITY EXECUTION COMPLETED
-                echo =====================================================
-
-            """
-
+            '''
         }
-
     }
 
+    post {
+
+        always {
+
+            script {
+
+                bat '''
+
+                    if exist allure-results (
+                        call allure generate allure-results --clean -o allure-report
+                    )
+
+                '''
+
+                archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true
+                archiveArtifacts artifacts: 'allure-report/**', allowEmptyArchive: true
+            }
+        }
+    }
 }
 
         //==============================================================================
