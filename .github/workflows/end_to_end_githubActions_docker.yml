@@ -147,7 +147,7 @@ jobs:
       - name: Checkout QA Automation Repository
         uses: actions/checkout@v4
         with:
-          repository:  reshma141/playwrightimageee
+          repository:  reshmasuresh12/PlaywrightAutomationFramework
       - name: Pull Docker Image
         run: |
           
