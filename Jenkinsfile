@@ -54,13 +54,13 @@ pipeline {
 
         DEV_REPOSITORY = 'https://github.com/jglick/simple-maven-project-with-tests.git'
 
-        PLAYWRIGHT_REPOSITORY = 'https://github.com/testautomation093/PlaywrightAutomationFWAugust2026WeekDays.git'
+        PLAYWRIGHT_REPOSITORY = 'https://github.com/reshmasuresh12/PlaywrightAutomationFramework.git'
 
         MAVEN_HOME = tool 'maven'
 
         NODEJS_HOME = tool 'NodeJs'
         
-        JAVA_HOME  = tool 'jdk17'
+        JAVA_HOME  = tool 'Jdk21'
 
     }
 
